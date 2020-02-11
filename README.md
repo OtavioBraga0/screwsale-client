@@ -1,4 +1,4 @@
-## Projeto de Utilização simples do Redux
+## Teste de Front-end - Dashboard de venda de Parafusos (ScrewSale)
 
 Para rodar o projeto, abra o terminal na raiz do projeto e rode o comando:
 
