@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import GlobalStyle from './styles/global';
@@ -6,27 +6,30 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Routes from './routes';
 
-import {
-  Provider as UserProvider,
-  Context as UserContext,
-} from './context/UserContext';
-
 function App() {
-  const { state } = useContext(UserContext);
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    const userLocalStorage = JSON.parse(localStorage.getItem('user'));
+
+    if (userLocalStorage) {
+      setUser(userLocalStorage);
+    } else {
+      setUser({ user: {}, logged: false });
+    }
+  }, []);
 
   return (
-    <UserProvider>
-      <BrowserRouter>
-        {state.logged ? (
-          <>
-            <Header />
-            <Sidebar />
-          </>
-        ) : null}
-        <GlobalStyle />
-        <Routes />
-      </BrowserRouter>
-    </UserProvider>
+    <BrowserRouter>
+      {user.logged ? (
+        <>
+          <Header />
+          <Sidebar />
+        </>
+      ) : null}
+      <GlobalStyle />
+      <Routes />
+    </BrowserRouter>
   );
 }
 

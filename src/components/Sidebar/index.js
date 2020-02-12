@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 
 import {
   MdList,
@@ -12,12 +12,9 @@ import {
 import { FaUser } from 'react-icons/fa';
 
 import { Container, Menu, Submenu, MenuLink, UserContainer } from './styles';
-import { Context as UserContext } from '../../context/UserContext';
 
 export default function Sidebar() {
   const [show, setShow] = useState(false);
-
-  const { state } = useContext(UserContext);
 
   const handleShowList = () => {
     return show ? setShow(false) : setShow(true);
