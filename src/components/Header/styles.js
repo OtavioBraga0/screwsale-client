@@ -12,7 +12,7 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
   width: 200px;
   height: 75px;
 

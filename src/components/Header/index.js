@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <Container>
-      <LogoContainer>
+      <LogoContainer to="/">
         <img src={logo} alt="ScrewSale" />
       </LogoContainer>
       <Logout to="/login" onClick={handleLogout}>
