@@ -3,6 +3,12 @@
 Uma simples Dashboard utilizando somente ReactJS e Styled Components.
 Para a comunicação com o server foi utilizado a biblioteca Axios.
 
+### Acesso
+
+Dashboard
+    -> Login: admin
+    -> Senha: 123456
+
 Para rodar o projeto, abra o terminal na raiz do projeto e rode o comando:
 
 ### `yarn start` ou `npm start`
