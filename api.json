@@ -2,13 +2,6 @@
   "user": [
     {
       "id": 1,
-      "name": "Otávio Braga",
-      "email": "otavio.braga@hotmail.com",
-      "login": "otaviobraga",
-      "password": "e10adc3949ba59abbe56e057f20f883e"
-    },
-    {
-      "id": 2,
       "name": "Administrador",
       "email": "admin@admin.com",
       "login": "admin",
@@ -57,42 +50,4 @@
       "amount": 5
     }
   ],
-  "sales": [
-    {
-      "id": 1,
-      "product_id": 2,
-      "price": 5,
-      "sele_date": "2020-02-20"
-    },
-    {
-      "id": 2,
-      "product_id": 5,
-      "price": 50,
-      "sele_date": "2020-05-15"
-    },
-    {
-      "id": 3,
-      "product_id": 2,
-      "price": 5,
-      "sele_date": "2020-01-20"
-    },
-    {
-      "id": 4,
-      "product_id": 3,
-      "price": 20,
-      "sele_date": "2020-05-03"
-    },
-    {
-      "id": 5,
-      "product_id": 4,
-      "price": 20,
-      "sele_date": "2020-02-02"
-    },
-    {
-      "id": 6,
-      "product_id": 5,
-      "price": 50,
-      "sele_date": "2020-02-20"
-    }
-  ]
 }
